@@ -20,7 +20,7 @@ public class IndexPageTest extends BaseClass {
     @Test
     public void verifyLogo() throws Throwable {
         indexPage= new IndexPage();
-        boolean result=indexPage.validateLogo();
+        boolean result=indexPage.validateLogo() ;
         Assert.assertTrue(result);
     }
     public void verifyTitle() throws Throwable{
