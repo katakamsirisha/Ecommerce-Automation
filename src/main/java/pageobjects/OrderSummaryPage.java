@@ -13,7 +13,7 @@ public class OrderSummaryPage extends BaseClass {
         PageFactory.initElements(driver, this);
     }
 
-    public OrderConfirmationPage setConfirmOrderBtn(WebElement confirmOrderBtn) {
+    public OrderConfirmationPage setConfirmOrderBtn() {
         this.confirmOrderBtn = confirmOrderBtn;
         return new OrderConfirmationPage();
     }

@@ -24,7 +24,7 @@ public class AddToCartPage extends BaseClass {
         PageFactory.initElements(driver, this);
     }
 
-    public void enterQuantity() throws Throwable {
+    public void enterQuantity(String s) throws Throwable {
         quantity.click();
     }
 
@@ -39,10 +39,12 @@ public class AddToCartPage extends BaseClass {
     }
 
     public boolean validateAddToCart() throws Throwable {
+        Thread.sleep(3000);
         return AddToCartBtn.isDisplayed();
     }
 
     public OrderPage clickOnCheckOut() throws Throwable {
+        Thread.sleep(5000);
         ProceedToCheckOutBtn.click();
         return new OrderPage();
     }

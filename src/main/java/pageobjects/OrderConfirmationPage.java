@@ -12,9 +12,10 @@ public class OrderConfirmationPage extends BaseClass {
         PageFactory.initElements(driver, this);
     }
 
-    public void setConfirmMsg(WebElement confirmMsg) {
+    public String setConfirmMsg() {
         this.confirmMsg=confirmMsg;
 
-        }
+        return null;
+    }
 }
 

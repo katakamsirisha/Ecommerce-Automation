@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import javax.swing.*;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class IndexPage extends BaseClass {
@@ -42,4 +43,7 @@ public class IndexPage extends BaseClass {
         searchbutton.click();
         return new SearchResultPage();
     }
+
+
+
 }

@@ -20,7 +20,7 @@ public class PaymentPage extends BaseClass {
         this.bankWireMethod = bankWireMethod;
     }
 
-    public OrderSummaryPage setPayByCheckMethod(WebElement payByCheckMethod) {
+    public OrderSummaryPage setPayByCheckMethod() {
         this.payByCheckMethod = payByCheckMethod;
         return new OrderSummaryPage();
     }

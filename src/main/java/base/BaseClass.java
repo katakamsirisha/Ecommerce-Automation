@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.BeforeTest;
+import pageobjects.LoginPage;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -16,6 +17,7 @@ import java.util.Properties;
 public class BaseClass {
     public static Properties prop;
     public static WebDriver driver;
+    protected Object searchProduct;
 
     @BeforeTest
     public void loadConfig() {
@@ -35,7 +37,7 @@ public class BaseClass {
     }
 
     public static void launchApp() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().setup();
         String browserName = prop.getProperty("browser");
 
         if (browserName.contains("Chrome")) {

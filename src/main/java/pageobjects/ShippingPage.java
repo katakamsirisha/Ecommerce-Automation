@@ -15,11 +15,11 @@ public class ShippingPage extends BaseClass {
         PageFactory.initElements(driver, this);
     }
 
-    public void setTerms(WebElement terms) throws Throwable{
+    public void setTerms() throws Throwable{
         this.terms = terms;
     }
 
-    public PaymentPage setProceedToCheckOutBtn(WebElement proceedToCheckOutBtn) throws Throwable {
+    public PaymentPage setProceedToCheckOutBtn() throws Throwable {
         this.proceedToCheckOutBtn = proceedToCheckOutBtn;
         return new PaymentPage();
     }

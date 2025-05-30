@@ -16,8 +16,14 @@ public class Homepage extends BaseClass {
     public Homepage() {
         PageFactory.initElements(driver, this);
     }
+
+
     public boolean validateorderhistory() throws Throwable {
         return orderhistory.isDisplayed();
+    }
+    public String getCurrURL() {
+        String homePageURL= driver.getCurrentUrl();
+        return homePageURL;
     }
 
     }
